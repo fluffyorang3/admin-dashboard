@@ -21,10 +21,26 @@ img[src="media/view-dashboard.svg"] {
 }
 
 img[src="media/magnify.svg"] {
-  height: 20px;
+  height: 30px;
   margin-right: 12px;
   position: relative;
-  top: 5px;
+  top: 12px;
+}
+
+img[src="media/profile-pic.png"] {
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: rgb(228, 228, 228);
+}
+
+img[src="media/bell-badge.svg"] {
+  height: 20px;
+}
+
+img[src="media/bell-badge.svg"] + img {
+  height:30px;
+  border-width: 1px;
 }
 
 input {
@@ -36,13 +52,22 @@ input {
   padding-left: 10px;
 }
 
+button {
+  color: white;
+  background-color: rgb(111, 195, 255);
+  border-style: none;
+  height: 30px;
+  width: 80px;
+  border-radius: 100px;
+}
+
 
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 4fr;
   height: 100vh;
-  min-width: 1300px;
+  min-width: 1200px;
   color: white;
   font-weight: 500;
 
@@ -58,6 +83,7 @@ input {
   background-color: rgb(111, 195, 255);
   z-index: 2;
   padding: 15px;
+  color: black;
 }
 
 .header {
@@ -66,6 +92,9 @@ input {
   grid-area: 1 / 2 / 2 / 3;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
   z-index: 1;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
 }
 
 .content {
@@ -111,4 +140,31 @@ input {
 .header > div {
   align-content: center;
   padding: 25px;
+}
+
+.hi-there {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 5px;
+}
+
+.hi-there-text  p {
+  color: black;
+  margin: 2px;
+  margin-left: -10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  align-items: center;
+}
+
+.logins {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
 }
